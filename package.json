@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client": "nodemon index.js",
-    "ec2": "nodemon ec2.js",
+    "client": "node index.js",
+    "ec2": "node ec2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

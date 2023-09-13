@@ -8,8 +8,8 @@ app.use("/logs", express.json());
 
 app.post("/logs", (req, res) => {
   const { timestamp, level, message } = req.body;
-  console.log(Decrypt(message));
-  res.status(200).send("Log received");
+  console.log(`${timestamp} - ${Decrypt(message)}`);
+  return res.status(200).send("Log received");
 });
 
 const PORT = 3001;
