@@ -1,4 +1,5 @@
 require("dotenv").config();
+const crypto = require("crypto")
 
 function Decrypt(text) {
     let textParts = text.split(':');
